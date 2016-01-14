@@ -8,26 +8,38 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <title>Para Mis Amores! </title>
+        <style>
+        body{background-color: #d9edf7;}
+        h4{font-size:30px;}
+        h2{font-size: 70px;}
+        .btn-xlarge, .btn-xlarge2{
+          position: relative;
+          vertical-align: center;
+          /*width: 100%;*/
+          padding: 38px 38px;
+          font-size: 22px;
+          color: white;
+          text-align: center;
+          background: #62b1d0;
+          cursor: pointer;
+          border-radius: 50px;
+        }
+        .btn-xlarge2{ background: #f0ad4e;}
+        </style>
     </head>
     <body>
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <h3>Para Los Amores de Mi Vida! </h3><br/><br/><br/><br/>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
-                    <button class="btn btn-info btn-lg" id="empezar">
-                        <span class="glyphicon glyphicon-hourglass"></span> Empezar !
-                    </button>
-                    <button class="btn btn-warning btn-lg hidden" id="parar">
-                        <span class="glyphicon glyphicon-thumbs-up"></span> Parar !
-                    </button>
-                </div><br/>
-                <div class="panel-body" align="center"><br/><br/>
-                    <h2 id="numero"></h2><br/>
-                    <h4 id="mensaje">Mira Esto Cuando Me Extrañes!</h2><br/><br/>
-                </div>
-            </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
+            <h3 align="center">Para Los Amores de Mi Vida! </h3><br/>
+                <button class="btn btn-info btn-lg btn-xlarge" id="empezar">
+                    <span class="glyphicon glyphicon-hourglass"></span> Empezar !
+                </button>
+                <button class="btn btn-warning btn-lg hidden btn-xlarge2" id="parar">
+                    <span class="glyphicon glyphicon-thumbs-up"></span> Parar !
+                </button>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center"><br/><br/>
+                <div style="border-radius: 50px;border-style: dashed;width:70%;height: 70%;"><h2 id="numero" ></h2></div><br/>
+                <h4 id="mensaje">Mira Esto Cuando Me Extrañes!</h4><br/><br/>
         </div>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
@@ -51,7 +63,7 @@
                                 else if(num>25 && num <=30) $("#mensaje").empty().append('Los Amo Mucho A ti & a Nuestro Baby!');
                                     else if(num>30 && num <=35) $("#mensaje").empty().append('Estaremos Juntos Por Siempre');
                                         else if(num>35 && num <=40) $("#mensaje").empty().append('Un Rapidito o q? 3:) ');
-                                            else if(num>40 && num <=45) $("#mensaje").empty().append('Nunk Te Vayas! :( ');
+                                            else if(num>40 && num <=45) $("#mensaje").empty().append('Dame un kiss! :*');
                                                 else $("#mensaje").empty().append('Tu me Amas.... Pero yo!... Te Amo Muchisimo!');
         });
         function turno(){
